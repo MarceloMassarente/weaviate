@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.6
 
 # 1. COMECE PELA IMAGEM OFICIAL MAIS RECENTE (da documentação)
-FROM cr.weaviate.io/semitechnologies/weaviate:1.33.4
+FROM cr.weaviate.io/semitechnologies/weaviate:1.33.4-full
 
 # 2. ATIVAR O MÓDULO TEXT2VEC-TRANSFORMERS
 #    Este módulo inclui sentence-transformers internamente
