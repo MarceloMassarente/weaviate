@@ -102,14 +102,6 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD curl -f http://localhost:8080/v1/.well-known/ready || exit 1
 
 # ============================================================================
-# VOLUMES - PERSISTÊNCIA
-# ============================================================================
-
-VOLUME ["/var/lib/weaviate"]
-VOLUME ["/var/lib/weaviate/models"]
-VOLUME ["/var/lib/weaviate/backups"]
-
-# ============================================================================
 # PORTAS
 # ============================================================================
 
