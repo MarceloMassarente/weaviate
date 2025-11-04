@@ -72,8 +72,8 @@ ENV LOG_LEVEL="info"
 # Cache vetorial em memória
 ENV VECTOR_CACHE_MAINTENANCE_IN_MEMORY_PERCENTAGE="70"
 
-# Número de goroutines para indexação
-ENV INDEXING_GO_MAX_PROCS="0"  # 0 = usar todos os cores
+# Número de goroutines para indexação (0 = usar todos os cores)
+ENV INDEXING_GO_MAX_PROCS="0"
 
 # ============================================================================
 # GZIP - COMPRIMIR RESPONSES
@@ -81,6 +81,8 @@ ENV INDEXING_GO_MAX_PROCS="0"  # 0 = usar todos os cores
 
 # Habilitar compressão GZIP para respostas
 ENV GZIP_ENABLED="true"
+
+# Tamanho mínimo em bytes para comprimir
 ENV GZIP_MIN_LENGTH="1024"
 
 # ============================================================================
