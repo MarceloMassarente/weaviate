@@ -4,7 +4,7 @@
 # Simples, confiável, funciona perfeitamente em Railway
 # Sem dependências de módulos complexos
 
-FROM cr.weaviate.io/semitechnologies/weaviate:1.33.4
+FROM cr.weaviate.io/semitechnologies/weaviate:1.34.0
 
 LABEL maintainer="RAG2 Project"
 LABEL description="Weaviate BYOV - Production Ready"
